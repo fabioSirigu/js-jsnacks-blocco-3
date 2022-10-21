@@ -61,28 +61,23 @@ console.log(automobili);
 
 const dieselCar = automobili.filter(element => {
       if (element.alimentazione === 'diesel') {
-          return true;
-      }
-      return false;
-  
-  });
-  
-  
-  const benzCar = automobili.filter(element => {
-      if (element.alimentazione === 'benzina') {
-          return true;
-      }
-      return false;
-  
-  });
-  
-  const othersCars = automobili.filter(element => {
-      if (element.alimentazione !== 'diesel' && element.alimentazione !== 'benzina') {
-          return true;
-      }
-      return false;
-  });
+            return true;
+      }    
+});
 
-  console.log(dieselCar);
-  console.log(benzCar);
-  console.log(othersCars);
+
+const benzCar = automobili.filter(element => {
+      if (element.alimentazione === 'benzina') {
+            return true;
+      }
+});
+
+const othersCars = automobili.filter(element => {
+      if (element.alimentazione !== 'diesel' && element.alimentazione !== 'benzina') {
+            return true;
+      }
+});
+
+console.log(dieselCar);
+console.log(benzCar);
+console.log(othersCars);
